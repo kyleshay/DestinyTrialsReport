@@ -124,3 +124,23 @@
     padding-right: 5px;
   }
 }
+
+.weapon-type-icon {
+  line-height: 1em;
+  max-height: 1em;
+  margin: .25em 0;
+}
+
+.star {
+  color: $info;
+}
+
+.rating--unrated {
+  i {
+    opacity: .25;
+  }
+
+  &:hover i {
+    opacity: 1;
+  }
+}

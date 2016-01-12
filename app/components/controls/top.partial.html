@@ -65,13 +65,19 @@
     <div class="current-map__title">
       <span ng-bind="currentMap.name"></span>
     </div>
-    <div class="current-map__heatmap" ng-if="currentMap.heatmapImage">
+    <div class="current-map__btn">
+      <button type="button" class="btn btn-default btn-sm"
+              data-template-url="shared/modals/mapinfo.modal.html" bs-modal>
+        Info
+      </button>
+    </div>
+    <div class="current-map__btn" ng-if="currentMap.heatmapImage">
       <button type="button" class="btn btn-default btn-sm"
               data-template-url="shared/modals/heatmap.modal.html" bs-modal>
         Heatmap
       </button>
     </div>
-    <div class="current-map__heatmap" ng-if="currentMap.mapImage">
+    <div class="current-map__btn" ng-if="currentMap.mapImage">
       <button type="button" class="btn btn-default btn-sm"
               data-template-url="shared/modals/map.modal.html" bs-modal>
         Map

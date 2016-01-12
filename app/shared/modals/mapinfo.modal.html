@@ -1,0 +1,181 @@
+<div class="modal modal--white" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div ng-click="$hide()" class="modal-close"><i class="material-icons">&#xE14C;</i></div>
+      <div class="modal-hero" ng-style="{'background-image':'url(' + currentMap.pgcrImage + ')'}">
+        <div>
+          <div class="modal-hero__title" ng-bind="currentMap.name"></div>
+          <div class="modal-hero__label" ng-bind="(trialsInProgress ? 'This' : 'Last') + ' week\'s map'"></div>
+        </div>
+      </div>
+      <div class="modal-text">
+        <div class="row">
+          <div class="col-xs-3 stat">
+            <span>3 weeks ago</span>
+            <label>Last time in Trials</label>
+          </div>
+          <div class="col-xs-3 stat">
+            <span>123,938</span>
+            <label>Flawless runs</label>
+          </div>
+          <div class="col-xs-3 stat">
+            <span>1,938</span>
+            <label>Some stat</label>
+          </div>
+          <div class="col-xs-3 stat">
+            <span>2,138</span>
+            <label>Some other stat</label>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-5">
+            <div class="top-weapons--map">
+              <div class="row">
+                <div class="col-xs-4">
+                  <label class="top-weapons__label" ng-bind="'Primary'"></label>
+                </div>
+                <div class="col-xs-4 stat">
+                  <label>Kills</label>
+                </div>
+                <div class="col-xs-4 stat">
+                  <label>Diff. to avg</label>
+                </div>
+              </div>
+              <div class="row top-weapons--map__row">
+                <div class="col-xs-4">
+                  <img class="weapon-type-icon img-responsive" ng-src="{{'assets/img/weapon-icons/assault-rifle.svg'}}" alt="{{'Assault Rifle'}}">
+                </div>
+                <div class="col-xs-4 stat">
+                  <span ng-bind="'12.50'"></span>%
+                </div>
+                <div class="col-xs-4 stat success">
+                  <i class="material-icons">&#xE5CE;</i> <span ng-bind="'1.23'"></span>%
+                </div>
+              </div>
+              <div class="row top-weapons--map__row">
+                <div class="col-xs-4">
+                  <img class="weapon-type-icon img-responsive" ng-src="{{'assets/img/weapon-icons/pulse-rifle.svg'}}" alt="{{'Pulse Rifle'}}">
+                </div>
+                <div class="col-xs-4 stat">
+                  <span ng-bind="'10.98'"></span>%
+                </div>
+                <div class="col-xs-4 stat fail">
+                  <i class="material-icons">&#xE5CF;</i> <span ng-bind="'1.23'"></span>%
+                </div>
+              </div>
+              <div class="row top-weapons--map__row">
+                <div class="col-xs-4">
+                  <img class="weapon-type-icon img-responsive" ng-src="{{'assets/img/weapon-icons/handcannon.svg'}}" alt="{{'Handcannon'}}">
+                </div>
+                <div class="col-xs-4 stat">
+                  <span ng-bind="'12.50'"></span>%
+                </div>
+                <div class="col-xs-4 stat success">
+                  <i class="material-icons">&#xE5CE;</i> <span ng-bind="'1.23'"></span>%
+                </div>
+              </div>
+              <div class="row top-weapons--map__row">
+                <div class="col-xs-4">
+                  <img class="weapon-type-icon img-responsive" ng-src="{{'assets/img/weapon-icons/scout-rifle.svg'}}" alt="{{'Scout Rifle'}}">
+                </div>
+                <div class="col-xs-4 stat">
+                  <span ng-bind="'10.98'"></span>%
+                </div>
+                <div class="col-xs-4 stat fail">
+                  <i class="material-icons">&#xE5CF;</i> <span ng-bind="'1.23'"></span>%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 col-xs-offset-1">
+            <div class="top-weapons--map">
+              <div class="row">
+                <div class="col-xs-4">
+                  <label class="top-weapons__label" ng-bind="'Special'"></label>
+                </div>
+                <div class="col-xs-4 stat">
+                  <label>Kills</label>
+                </div>
+                <div class="col-xs-4 stat">
+                  <label>Diff. to avg</label>
+                </div>
+              </div>
+              <div class="row top-weapons--map__row">
+                <div class="col-xs-4">
+                  <img class="weapon-type-icon img-responsive" ng-src="{{'assets/img/weapon-icons/shotgun.svg'}}" alt="{{'Shotgun'}}">
+                </div>
+                <div class="col-xs-4 stat">
+                  <span ng-bind="'13.56'"></span>%
+                </div>
+                <div class="col-xs-4 stat fail">
+                  <i class="material-icons">&#xE5CF;</i> <span ng-bind="'1.23'"></span>%
+                </div>
+              </div>
+              <div class="row top-weapons--map__row">
+                <div class="col-xs-4">
+                  <img class="weapon-type-icon img-responsive" ng-src="{{'assets/img/weapon-icons/sniper.svg'}}" alt="{{'Sniper'}}">
+                </div>
+                <div class="col-xs-4 stat">
+                  <span ng-bind="'13.56'"></span>%
+                </div>
+                <div class="col-xs-4 stat fail">
+                  <i class="material-icons">&#xE5CF;</i> <span ng-bind="'1.23'"></span>%
+                </div>
+              </div>
+              <div class="row top-weapons--map__row">
+                <div class="col-xs-4">
+                  <img class="weapon-type-icon img-responsive" ng-src="{{'assets/img/weapon-icons/fusion-rifle.svg'}}" alt="{{'Fusion Rifle'}}">
+                </div>
+                <div class="col-xs-4 stat">
+                  <span ng-bind="'13.56'"></span>%
+                </div>
+                <div class="col-xs-4 stat fail">
+                  <i class="material-icons">&#xE5CF;</i> <span ng-bind="'1.23'"></span>%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-6" ng-repeat="type in [gggWeapons[platformNumeric].primary,
+                                     gggWeapons[platformNumeric].special] track by $index">
+            <div class="row top-weapon" ng-repeat="weapon in type track by $index" ng-if="$index < 5">
+              <div class="col-xs-7 last-weapon-weapon__descr">
+                <img class="last-match-weapon__img img-responsive" ng-src="{{'https://www.bungie.net/' + weapon.icon}}" alt="{{weapon.name}}">
+                <span class="last-match-weapon__title" ng-bind="weapon.name"></span>
+              </div>
+              <div class="col-xs-5 stat">
+                <span ng-bind="weapon.kills | number:2"></span>%
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-5 stat">
+            <span>
+              <i class="material-icons star">&#xE838;</i>
+              <i class="material-icons star">&#xE838;</i>
+              <i class="material-icons star">&#xE838;</i>
+              <i class="material-icons star">&#xE839;</i>
+              <i class="material-icons star">&#xE83A;</i>
+            </span>
+            <label>Community rating</label>
+          </div>
+          <div class="col-xs-5 col-xs-offset-1 stat">
+            <span class="rating rating--unrated">
+              <i class="material-icons star">&#xE83A;</i>
+              <i class="material-icons star">&#xE83A;</i>
+              <i class="material-icons star">&#xE83A;</i>
+              <i class="material-icons star">&#xE83A;</i>
+              <i class="material-icons star">&#xE83A;</i>
+            </span>
+            <label>Your rating</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
